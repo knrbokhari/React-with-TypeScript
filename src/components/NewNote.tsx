@@ -1,8 +1,12 @@
 import React from 'react'
+import NoteForm from './NoteForm'
 
 const NewNote = () => {
   return (
-    <div>NewNote</div>
+    <>
+      <h1>NewNote</h1>
+      <NoteForm />
+    </>
   )
 }
 
