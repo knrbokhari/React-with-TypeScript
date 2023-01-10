@@ -60,7 +60,7 @@ const NoteForm = ({
                   value={selectedTags.map(tag => {
                     return { label: tag.label, value: tag.id }
                   })}
-                  options={availableTags.map(tag => {
+                  options={availableTags.map((tag: { label: any; id: any }) => {
                     return { label: tag.label, value: tag.id }
                   })}
                   onChange={tags => {
@@ -78,10 +78,10 @@ const NoteForm = ({
           <Form.Group controlId="markdown">
             <Form.Label>Body</Form.Label>
             <Form.Control
-              // defaultValue={markdown}
+              defaultValue={markdown}
               required
               as="textarea"
-              // ref={markdownRef}
+              ref={markdownRef}
               rows={15}
             />
           </Form.Group>

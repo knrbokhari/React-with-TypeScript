@@ -8,6 +8,25 @@ import NoteList from './components/NoteList'
 import EditNote from './components/EditNote'
 import NoteLayout from './components/NoteLayout'
 
+
+export type RawNoteData = {
+  title: string
+  markdown: string
+  tagIds: string[]
+}
+
+export type NoteData = {
+  title: string
+  markdown: string
+  tags: Tag[]
+}
+
+export type Tag = {
+  id: string
+  label: string
+}
+
+
 function App () {
   return (
     <Container>
