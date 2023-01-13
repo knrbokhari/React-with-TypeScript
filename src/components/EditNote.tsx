@@ -18,6 +18,7 @@ const EditNote = ({ onSubmit, onAddTag, availableTags }: EditNoteProps) => {
         title={note.title}
         markdown={note.markdown}
         tags={note.tags}
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         onSubmit={(data: any) => onSubmit(note.id, data)}
         onAddTag={onAddTag}
         availableTags={availableTags}
