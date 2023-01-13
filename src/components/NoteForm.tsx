@@ -101,4 +101,4 @@ const NoteForm = ({
   )
 }
 
-export default NoteForm
+export default NoteForm;
